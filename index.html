@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Atlas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero fade-in" id="home">
+        <nav>
+            <h1>Adventure Atlas</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#calculator">Trip Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <p class="slide-in-left">DISCOVER THE COLORFUL WORLD</p>
+            <h2 class="fade-in">NEW ADVENTURE</h2>
+            <p class="slide-in-right">Plan an amazing journey with exciting places to visit and adventure to explore.</p>
+            <button class="cta-button scale-up" id="explore-button">Explore Now</button>
+        </div>
+    </header>
+    <section id="explore" class="section">
+        <h2 class="slide-in-left">Explore Top Destinations</h2>
+        <div class="explore-grid scale-up">
+            <div class="destination" style="background-image: url('paris.jpeg');">
+                <div class="overlay">
+                    <h3>Paris</h3>
+                </div>
+            </div>
+            <div class="destination" style="background-image: url('bali.jpeg');">
+                <div class="overlay">
+                    <h3>Bali</h3>
+                </div>
+            </div>
+            <div class="destination" style="background-image: url('switzerland.jpg');">
+                <div class="overlay">
+                    <h3>Switzerland</h3>
+                </div>
+            </div>
+            <div class="destination" style="background-image: url('tokyo.jpeg');">
+                <div class="overlay">
+                    <h3>Tokyo</h3>
+                </div>
+            </div>
+            <div class="destination" style="background-image: url('rome.jpeg');">
+                <div class="overlay">
+                    <h3>Rome</h3>
+                </div>
+            </div>
+            <div class="destination" style="background-image: url('germany.jpeg');">
+                <div class="overlay">
+                    <h3>Germany</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="calculator" class="section">
+        <h2 class="slide-in-right">Trip Cost Calculator</h2>
+        <form id="tripForm" class="slide-in-left">
+            <label>Destination:
+                <select name="Select" id="destination">
+                    <option value="1000">Bali</option>
+                    <option value="1200">Paris</option>
+                    <option value="800">Thailand</option>
+                    <option value="1500">Tokyo</option>
+                    <option value="1100">Rome</option>
+                    <option value="900">Germany</option>
+                </select>
+            </label>
+            <label>Number of Travelers: <input type="number" id="travelers" required></label>
+            <label>Days of Travel: <input type="number" id="days" required></label>
+            <label>Accomodation: 
+                <select name="Select" id="accomodation">
+                    <option value="100">Budget</option>
+                    <option value="200">Standard</option>
+                    <option value="300">Luxury</option>
+                </select>
+            </label>
+            <label>Transport:
+                <select name="Select" id="transport">
+                    <option value="50">Bus</option>
+                    <option value="100">Train</option>
+                    <option value="300">Flight</option>
+                </select>
+            </label>
+            <button type="submit" class="scale-up">Calculate</button>
+        </form>
+        <div id="result" class="fade-in"></div>
+    </section>
+    <section id="contact" class="section">
+        <h2 class="slide-in-right">Contact Us</h2>
+        <form id="contactForm" class="slide-in-left">
+            <input type="text" id="name" placeholder="Your Name" required/>
+            <input type="email" id="email" placeholder="Your Email" required/>
+            <input type="text" id="subject" placeholder="Subject" required/>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="scale-up">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 AdventureAtlas Travel Agency. All rights reserved. Contact- 9876543210</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
